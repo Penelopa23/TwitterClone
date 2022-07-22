@@ -20,6 +20,7 @@
 		9EB43D9728888778006C63D5 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB43D9628888778006C63D5 /* NotificationsController.swift */; };
 		9EB43D99288887B9006C63D5 /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB43D98288887B9006C63D5 /* ExploreController.swift */; };
 		9EB43D9B28888804006C63D5 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB43D9A28888804006C63D5 /* ConversationsController.swift */; };
+		9EB43D9F2889D8A8006C63D5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB43D9E2889D8A8006C63D5 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		9EB43D9628888778006C63D5 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
 		9EB43D98288887B9006C63D5 /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
 		9EB43D9A28888804006C63D5 /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
+		9EB43D9E2889D8A8006C63D5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,14 +109,14 @@
 		9E2CCAF3288736A000AB6123 /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
-				9E2CCB29288736EA00AB6123 /* Utils */,
 				9E2CCB28288736E000AB6123 /* Models */,
 				9E2CCB27288736D300AB6123 /* ViewModels */,
 				9E2CCB26288736C100AB6123 /* Views */,
 				9E2CCB25288736BA00AB6123 /* Controllers */,
 				9E2CCB24288736AA00AB6123 /* API */,
-				9E2CCAF4288736A000AB6123 /* AppDelegate.swift */,
+				9E2CCB29288736EA00AB6123 /* Utils */,
 				9E2CCAF6288736A000AB6123 /* SceneDelegate.swift */,
+				9E2CCAF4288736A000AB6123 /* AppDelegate.swift */,
 				9E2CCAFA288736A000AB6123 /* Main.storyboard */,
 				9E2CCAFD288736A000AB6123 /* Assets.xcassets */,
 				9E2CCAFF288736A000AB6123 /* LaunchScreen.storyboard */,
@@ -183,6 +185,7 @@
 		9E2CCB29288736EA00AB6123 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9EB43D9E2889D8A8006C63D5 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				9EB43D9728888778006C63D5 /* NotificationsController.swift in Sources */,
 				9EB43D9B28888804006C63D5 /* ConversationsController.swift in Sources */,
 				9E2CCAF5288736A000AB6123 /* AppDelegate.swift in Sources */,
+				9EB43D9F2889D8A8006C63D5 /* Extensions.swift in Sources */,
 				9EB43D99288887B9006C63D5 /* ExploreController.swift in Sources */,
 				9EB43D95288886CC006C63D5 /* FeedController.swift in Sources */,
 				9E2CCAF7288736A000AB6123 /* SceneDelegate.swift in Sources */,

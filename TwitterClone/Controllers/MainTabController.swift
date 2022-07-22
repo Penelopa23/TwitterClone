@@ -8,13 +8,44 @@
 import UIKit
 
 class MainTabController: UITabBarController {
+        
+    //MARK: - Properties
+    
+    let actionButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.tintColor = .white
+        button.backgroundColor = .blue
+        button.setImage(UIImage(named: "new_tweet"), for: .normal)
+        return button
+    }()
+    
+    
+    //MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
     
+        configureTabBarBounds()
         configureViewControllers()
+        configureUI()
         
+    }
+    
+    //MARK: - Heplers
+    
+    func configureUI() {
+        view.addSubview(actionButton)
+        actionButton.anchor(bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingBottom: 64, paddingRight: 16, width: 56, height: 56)
+        actionButton.layer.cornerRadius = 56 / 2
+    }
+    
+    
+    func configureTabBarBounds() {
+        let apperance = UITabBarAppearance()
+        apperance.configureWithOpaqueBackground()
+        apperance.backgroundColor = .white
+        tabBar.standardAppearance = apperance
+        tabBar.scrollEdgeAppearance = tabBar.standardAppearance
     }
     
     func configureViewControllers() {
@@ -34,8 +65,15 @@ class MainTabController: UITabBarController {
         let nav = UINavigationController(rootViewController: rootViewController)
         nav.tabBarItem.image = image
         nav.navigationBar.barTintColor = .white
+        let apperance = UINavigationBarAppearance()
+        apperance.configureWithOpaqueBackground()
+        apperance.backgroundColor = .white
+        nav.navigationBar.standardAppearance = apperance
+        nav.navigationBar.scrollEdgeAppearance = nav.navigationBar.standardAppearance
         return nav
     }
+    
+ 
     /*
     // MARK: - Navigation
 
