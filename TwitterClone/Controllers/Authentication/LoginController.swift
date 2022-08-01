@@ -48,13 +48,13 @@ class LoginConroller: UIViewController {
         button.heightAnchor.constraint(equalToConstant: 50).isActive = true
         button.layer.cornerRadius = 5
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
-        button.addTarget(LoginConroller.self, action: #selector(handleLogin), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
         return button
     }()
     
     private let dontHaveAccountButton: UIButton = {
         let button = Utilities().attributedButton("Don't have an account? ", "Sign Up")
-        button.addTarget(LoginConroller.self, action: #selector(handleShowSignUp), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleShowSignUp), for: .touchUpInside)
         return button
     }()
     
@@ -70,7 +70,8 @@ class LoginConroller: UIViewController {
     }
     
     @objc func handleShowSignUp() {
-        print("Sign Up handle There")
+        let controller = RegistrationController()
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     //MARK: - Helpers
