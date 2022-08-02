@@ -1,0 +1,5 @@
+Target dependency graph (3 targets)
+Pods-TwitterClone in Pods, no dependencies
+Pods-TwitterClone-TwitterCloneUITests in Pods, no dependencies
+Pods-TwitterCloneTests in Pods, depends on:
+Pods-TwitterClone in Pods (explicit)

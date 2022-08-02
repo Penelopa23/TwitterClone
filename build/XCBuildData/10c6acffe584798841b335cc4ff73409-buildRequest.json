@@ -1,0 +1,52 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e982fe8d873bd60f71dd6491c3887a74825"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e98234bb7dc3b6c297fe065c99b727549b8"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e9883bb825e4943403c710615c8ac27ef32"
+    }
+  ],
+  "containerPath" : "/Users/artemvitinschii/Desktop/TwitterClone/Pods/Pods.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/artemvitinschii/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/artemvitinschii/Library/Developer/Xcode/DerivedData/Pods-gulyrubexyoondfnsuealtwzocck/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/artemvitinschii/Library/Developer/Xcode/DerivedData/Pods-gulyrubexyoondfnsuealtwzocck/Index/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : false
+}
