@@ -25,7 +25,7 @@ struct AuthService {
         Auth.auth().signIn(withEmail: email, password: password, completion: completion)
     }
     
-    func registerUser(credentials: AuthCredentials, complition: @escaping(Error?, DatabaseReference) -> Void) {
+    func registerUser(credentials: AuthCredentials, completion: @escaping(Error?, DatabaseReference) -> Void) {
         
         guard let imageData = credentials.profileImage.jpegData(compressionQuality: 0.3) else { return }
         let filename = NSUUID().uuidString
@@ -45,7 +45,7 @@ struct AuthService {
                     
                     let values = ["email": credentials.email, "username": credentials.username, "fullname": credentials.fullName, "profileImageUrl": profileImageUrl]
                     
-                    REF_USERS.child(uid).updateChildValues(values, withCompletionBlock: complition)
+                    REF_USERS.child(uid).updateChildValues(values, withCompletionBlock: completion)
                 }
             }
         }
