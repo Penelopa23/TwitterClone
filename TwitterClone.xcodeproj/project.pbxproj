@@ -17,6 +17,8 @@
 		9E2CCB16288736A000AB6123 /* TwitterCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2CCB15288736A000AB6123 /* TwitterCloneUITests.swift */; };
 		9E2CCB18288736A000AB6123 /* TwitterCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2CCB17288736A000AB6123 /* TwitterCloneUITestsLaunchTests.swift */; };
 		9E2CCB2B288739C500AB6123 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2CCB2A288739C500AB6123 /* MainTabController.swift */; };
+		9E83893C289AF08500A05504 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E83893B289AF08500A05504 /* UserService.swift */; };
+		9E83893E289AF7AB00A05504 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E83893D289AF7AB00A05504 /* User.swift */; };
 		9E9C34D2288C54870005DDD8 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C34D1288C54870005DDD8 /* LoginController.swift */; };
 		9E9C34D4288C55770005DDD8 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C34D3288C55770005DDD8 /* RegistrationController.swift */; };
 		9E9C34D6288D22890005DDD8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C34D5288D22890005DDD8 /* Utilities.swift */; };
@@ -67,6 +69,8 @@
 		9E2CCB15288736A000AB6123 /* TwitterCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCloneUITests.swift; sourceTree = "<group>"; };
 		9E2CCB17288736A000AB6123 /* TwitterCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9E2CCB2A288739C500AB6123 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		9E83893B289AF08500A05504 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = TwitterClone/Utils/UserService.swift; sourceTree = SOURCE_ROOT; };
+		9E83893D289AF7AB00A05504 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = TwitterClone/Utils/User.swift; sourceTree = SOURCE_ROOT; };
 		9E9C34D1288C54870005DDD8 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		9E9C34D3288C55770005DDD8 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		9E9C34D5288D22890005DDD8 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -176,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				9EFFD84E289AC02A00DE8386 /* AuthService.swift */,
+				9E83893B289AF08500A05504 /* UserService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 		9E2CCB28288736E000AB6123 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9E83893D289AF7AB00A05504 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -496,6 +502,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E83893C289AF08500A05504 /* UserService.swift in Sources */,
 				9EB43D9728888778006C63D5 /* NotificationsController.swift in Sources */,
 				9EB43D9B28888804006C63D5 /* ConversationsController.swift in Sources */,
 				9E9C34D6288D22890005DDD8 /* Utilities.swift in Sources */,
@@ -503,6 +510,7 @@
 				9EB43D9F2889D8A8006C63D5 /* Extensions.swift in Sources */,
 				9E9C34D2288C54870005DDD8 /* LoginController.swift in Sources */,
 				9EFFD84F289AC02A00DE8386 /* AuthService.swift in Sources */,
+				9E83893E289AF7AB00A05504 /* User.swift in Sources */,
 				9EB43D99288887B9006C63D5 /* ExploreController.swift in Sources */,
 				9EB43D95288886CC006C63D5 /* FeedController.swift in Sources */,
 				9E2CCAF7288736A000AB6123 /* SceneDelegate.swift in Sources */,
